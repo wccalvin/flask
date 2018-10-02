@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- capitalize is an example for using filter (refer docs) -->
+<h1>This is the puppy page for: {{ name | capitalize }}</h1>
+<a href="{{ url_for('static', filename='img/puppy.jpg') }}">Here</a>
+{% endblock %}
