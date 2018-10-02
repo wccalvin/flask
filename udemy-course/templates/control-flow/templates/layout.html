@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learning Flask</title>
+</head>
+
+<body>
+  <h1>Website using Flask<br>Just printing the variable:</h1>
+  <h2>{{ my_list }}</h2>
+  <h1>Using control flow below:</h1>
+  <ul>
+    {% for item in my_list %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% if 0 in my_list %}
+  <p>This does not seem right. Can you ignore 0 somehow?!?</p>
+  {% endif %}
+  {% if 5 in my_list %}
+  <p>Found you.</p>
+  {% elif 4 in my_list %}
+  <p>Guess what, 4 is found...</p>
+  {% else %}
+  <p>Hmm.. looking for 5 here.</p>
+  {% endif %}
+
+</body>
+
+</html>
