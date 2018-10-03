@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <p>Welcome to Code Rock!</p>
+  <p>Wanna sign up for our code hackathon?</p>
+  <a href="{{ url_for('signup_form') }}">Sign up to start coding here!</a>
+</div>
+
+{% endblock %}

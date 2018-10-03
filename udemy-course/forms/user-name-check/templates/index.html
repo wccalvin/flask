@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <p>Welcome to User Name Check</p>
+  <p>Pick a secure User Name!</p>
+  <p>Follow the below restraints</p>
+  <ul>
+    <li>Must have a minimum of three characters</li>
+    <li>Must have an upper case letter somewhere</li>
+    <li>Must have a lower case letter somewhere</li>
+    <li>Must have a number at the end</li>
+  </ul>
+  <form action="{{ url_for('report') }}">
+    <label for="user">UserName</label>
+    <input type="text" name="user">
+    <input type="submit" value="Submit Form">
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="jumbotron">
+  <h1>Welcome to the sign up page!</h1>
+  <p>We're excited to have you here.</p>
+  <p>This will redirect to a thank you page.</p>
+  <p>
+    This is going to be super fun! Lets get started!
+  </p>
+  <form action="{{ url_for('thank_you') }}">
+    <label for="first">First Name</label>
+    <input type="text" name="first">
+    <label for="last">Last Name</label>
+    <input type="text" name="last">
+    <input type="submit" value="Submit Form">
+  </form>
+</div>
+
+{% endblock %}
