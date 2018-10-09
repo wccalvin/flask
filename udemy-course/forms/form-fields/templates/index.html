@@ -1,0 +1,18 @@
+<h1>Welcome to Engineer Survey</h1>
+<form method="POST">
+  {{ form.hidden_tag() }}
+
+  {{ form.name.label }} {{ form.name }}
+  <br>
+  {{ form.engineer.label }} {{ form.engineer }}
+  <br>
+  {{ form.qualification.label }} {{ form.qualification }}
+  <br>
+  {{ form.computer_language.label }} {{ form.computer_language }}
+  <br>
+  Any other feedback?
+  <br>
+  {{ form.feedback }}
+  <br>
+  {{ form.submit() }}
+</form>
